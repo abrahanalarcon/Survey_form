@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+:root{
+  --linear-grey: linear-gradient(to right,#1DBF6A, #1B62B5); */
+}
+/** La regla :root en CSS se utiliza para seleccionar el elemento raíz del documento HTML,
+ que es el elemento <html>. Permite definir estilos que se aplicarán globalmente en todo el documento   */
+body{
+  margin: 20px;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+  background: var(--linear-grey); */
+}
+
+/* Las variables CSS, denotadas por el prefijo --, permiten definir valores que se pueden reutilizar
+ en diferentes partes de una hoja de estilo.
+ En este caso, --linear-grey es el nombre de la variable definida
+  en algún lugar del archivo CSS o en un archivo vinculado.
+
+El valor var(--linear-grey) se utiliza para acceder al valor de la 
+variable CSS --linear-grey y aplicarlo como el valor de fondo para el elemento <body>. El
+ valor real de --linear-grey dependerá de cómo se haya definido previamente en el CSS. */
+
+h1{
+  font-size: 3rem;
+  line-height: 0.5;
+
+
+  /* El valor 3rem en la propiedad font-size en CSS se utiliza para
+   establecer el tamaño de la fuente relativo al tamaño de la fuente del elemento raíz (<html>).
+El rem es una unidad de medida relativa que representa el tamaño
+ de la fuente del elemento raíz. Entonces, si el tamaño de la fuente del 
+ elemento raíz es de 16 píxeles, 1rem será igual a 16 píxeles.
+Si aplicas font-size: 3rem; a un elemento, significa que el tamaño de 
+la fuente será 3 veces el tamaño de la fuente del elemento raíz. */
+}
+
+#survey{
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(0,0,0, 0.03),8px 8px 8px 0 rgba(0,0,0, 0.1),-8px 8px 18px  rgba(0,0,0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+}
+@media(max-width: 600px){
+  #survey{
+    width: 90%;
+  }
+}
+
+/** Form elements css **/
+.form-group{
+  font-size: 1.3rem;
+  
+  padding-bottom: 15px;
+}
+.input-field{
+  width: 15rem;
+  font-size: 1.1rem;
+}
+.input-field:focus{
+  border-color:rgba(27,98,181, 0.8);
+  outline: 0;
+  border-radius: 3px;
+}
+textarea{
+  width: 60%;
+  height: 7rem;
+  resize: vertical;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+textarea:focus{
+  border-color:rgba(27,98,181, 0.8);
+  outline: 0;
+  border-radius: 3px;
+}
+
+#submit-button{
+  background-color: white;
+  color: #1B62B5;
+  border: 3px solid;
+  border-radius: 4px;
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#submit-button:hover{
+  background-color: white;
+  color: #1DBF6A;
+  border: solid;
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}

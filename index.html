@@ -1,0 +1,119 @@
+<!--ESTE PROGRAMA ES MI PRIMER PROGRAMA PARA LA CERTIFICACION-->
+<!--A SURVEY FORM-->
+
+<!DOCTYPE html> 
+<!--Todas las páginas deben comenzar con Esta cadena especial se conoce como declaración
+ y garantiza que el navegador intente cumplir con las especificaciones de toda la industria.-->
+
+
+<!-- este es el archivo index-->
+
+<html lang="en">
+  <!-- Agregue el atributo
+     lang con el valor en a la etiqueta html de 
+     apertura para especificar que el idioma de la
+      página es el inglés. -->
+
+
+  <!-- agregregamos un head con su titutlo -->
+
+  <!--<h1 id="title">Survey Form</h1>
+
+  <p id="description"></p> -->
+  <div id="survey">
+    <h1 id="title">Survey Form</h1>
+    <!-- Este es un vinculo para tomar el stylo del arcivo css.  -->
+    <link rel="stylesheet" href="styles.css">
+    <p id="description"> A survey made for the Responsive Web Design Certification</p>
+    <hr style="width: 80%;"/>
+
+    <!--*************   -->
+    <!--*************   -->
+    <!--*************   -->
+    <!--*************   -->
+   
+    <form id="survey-form">
+    <!-- Acontinuacion ponemos la casilla del formulario-->
+  <div class="form-group">
+    <!--Las etiquetas <label> en HTML se utilizan para
+    asociar texto descriptivo con un elemento de formulario,
+     como un campo de entrada (<input>) -->
+   <!-- ******** -->
+   <!-- ******** -->
+   <!-- ******** -->
+   <!-- ******** -->
+     <!-- 10. For the name, email, and number input fields, you can see corresponding label elements in the form,
+    that describe the 
+    purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"-->
+    <label id="name-label" for="name">Name:</label>
+    <!-- agregregamos el input de name  -->
+    <input id="name" name="name"   type="text" placeholder="Enter your name"  class="input-field"required/>
+    </div>
+    
+
+    <!-- los placeholders son para agregar una descripcion antes de -->
+    <!--11. For the name, email, and number input fields, you can see placeholder 
+    text that gives a description or instructions for each field -->
+    <div class="form-group">
+    <label id="email-label" for="email">Email:</label>
+    <!-- agregregamos el input de email -->
+    <input id="email" name="email" type="email"  placeholder="Enter your email" class="input-field" required/>
+    </div>
+    
+    <div class="form-group">
+    <label id="number-label"for="number">Age:</label>
+    <!-- agregregamos el input de number  -->
+    <!--9. If you enter numbers outside the range of the number input, which are defined
+     by the min and max attributes, you will see an HTML5 validation error -->
+    <input id="number" name="number" type="number"   placeholder="0" min="0" max="102"  class="input-field"/>
+    </div>
+
+  <div class="form-group">
+    <label for="dropdown">Desired position:</label>
+    <!--12. Inside the form element, you should have 
+      a select dropdown element with an id of dropdown and at least two options to choose from -->
+    <select id="dropdown" placeholder="klk" class="input-field">
+      <!-- agregregamos las opciones -->
+      <option disabled selected value>Select an option</option>
+      <option value="Junior Developer">Junior Developer</option>
+      <option value="Mid Developer">Mid Developer</option>
+      <option value="Senior Developer">Senior Developer</option>
+    </select>
+  </div>
+    
+  <div class="form-group">
+    <!--13. Inside the form element, you can select an option from a
+    group of at least two radio buttons that are 
+    grouped using the name attribute -->
+
+    <p>Which work scheduale works best for you?</p>
+    <label><input type="radio" name="work-schedule" value="full-time">Full time (M to F)</input></label>
+    
+    <label><input type="radio" name="work-schedule" value="part-time">Part time (M to W or W to F)</input></label>
+    
+  </div>
+    
+  <div class="form-group">
+    <!--14. Inside the form element, you can select several 
+      fields from a series of checkboxes, each of which must have a value attribute -->
+    <p>What technologies would you like to be working on?</p>
+    <input name="technologies" type="checkbox" value="react">React</input>
+    <input name="technologies" type="checkbox" value="angular">Angular</input>
+    <input name="technologies" type="checkbox" value="bootstrap">Bootstrap</input>
+    <input name="technologies" type="checkbox" value="php">Php</input> 
+  </div> 
+    
+    <!--15. Inside the form element, you are presented with a textarea for additional comments -->
+    <div class="form-group">
+    <p>Any aditional comments?</p>
+    <textarea></textarea>
+    </div>
+    <!--16.Inside the form element, you are presented with a button with id of submit to submit all the inputs-->
+    <button id="submit-button" type="submit">Send</button> 
+    
+    </form>
+  </div>
+
+
+
+  
